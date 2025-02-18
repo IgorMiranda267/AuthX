@@ -11,11 +11,6 @@ app.use(express.json());
 // Inicializar Swagger
 swaggerConfig(app);
 
-// Rota de teste para verificar se o servidor está rodando
-app.get("/", (req, res) => {
-  res.send("API está rodando...");
-});
-
 // Iniciar o servidor
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);

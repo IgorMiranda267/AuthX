@@ -6,7 +6,7 @@ const options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Login API",
+      title: "AuthX",
       version: "1.0.0",
       description: "API de autenticação com Node.js, Express e PostgreSQL",
     },

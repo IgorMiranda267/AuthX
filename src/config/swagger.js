@@ -12,7 +12,7 @@ const options = {
     },
     servers: [
       {
-        url: process.env.VERCEL_URL || "http://localhost:3000",
+        url:  "http://localhost:3000",
       },
     ],
   },
@@ -22,5 +22,5 @@ const options = {
 const specs = swaggerJsdoc(options);
 
 module.exports = (app) => {
-  app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
+  app.use("/swagger", swaggerUi.serve, swaggerUi.setup(specs));
 };

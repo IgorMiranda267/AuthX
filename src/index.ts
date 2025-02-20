@@ -19,5 +19,5 @@ app.use('/api', authRoutes);
 
 // Iniciar o servidor
 app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`);
+  console.log(`Servidor rodando em http://localhost:${PORT}/swagger`);
 });
